@@ -1,0 +1,175 @@
+.player {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    background-color: rgb(21, 37, 55);
+    /* box-shadow: 0 0 20px #0f2f44; */
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+.player svg {
+  width: 20px;
+  height: 20px;
+}
+.player_img {
+  min-width: 70px;
+  height: 70px;
+  background: #eee;
+  margin-right: 20px;
+}
+.player_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.player h3 {
+  text-overflow: ellipsis !important; 
+  font-size: 18px;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #aebed3;
+  overflow: hidden;
+}
+.player p {
+  color: rgb(92, 112, 137);
+}
+.info {
+  padding-right: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis !important; 
+  max-width: 240px;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  min-width: 240px;
+  width: 240px;
+  border-right: 1px solid #235;
+  margin-right: 20px;
+}
+.sub_info {
+  min-width: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+.sub_info > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.time {
+  color: #778;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.time span{
+  color: #0bf;
+  font-weight: 800;
+}
+.bpm {
+  color: rgb(92, 112, 137);
+  font-size: 12px;
+}
+.slash {
+  font-size: 18px;
+  color: rgb(92, 112, 137);
+}
+.wave {
+  margin: 0 40px;
+  width: 100%;
+}
+.volume {
+  /* margin-left: auto; */
+  width: 60px;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  position: relative;
+}
+.volume__range {
+  border-radius: 10px;
+  padding: 20px;
+  background: rgb(21, 37, 55);
+  display: none;
+  justify-content: center;
+  position: absolute;
+  bottom: 60px;
+  width: 50px;
+}
+.volume__button {
+  height: 70px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.volume__button:hover + .volume__range {
+  display: flex;
+}
+.volume__range:hover {
+  display: flex;
+}
+
+
+.volume__button svg {
+  display: block;
+}
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+.prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 0.05)
+}
+.play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 0.05);
+  margin: 0 20px;
+}
+.next {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 0.05);
+  
+}
+.prev:hover, .next:hover, .play:hover {
+  transition: background-color .2s ease-in-out, color .2s ease-in-out;
+  cursor: pointer;
+  background:  rgb(255 255 255 / 0.15);
+}
+.toSong {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 12px;
+  margin-left: 10px;
+  height: 70px !important;
+  color: rgb(192, 212, 237)
+}
+.toSong:hover {
+  background: rgb(255 255 255 / 0.15);
+}
+.toSong svg {
+  width: 16px !important;
+}

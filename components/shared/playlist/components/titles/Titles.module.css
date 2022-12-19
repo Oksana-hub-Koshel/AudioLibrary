@@ -1,0 +1,13 @@
+.item {
+  padding-bottom: 5px;
+  font-size: 16px;
+}
+
+.wrapper{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 19% 19% 19% 7% 9% 5% 7% 7%;
+  column-gap: 1.1%;
+  font-size: 14px;
+  border-bottom: 2px solid #343434;
+}

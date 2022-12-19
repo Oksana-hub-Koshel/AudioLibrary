@@ -1,0 +1,10 @@
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  border: 1px solid #8a8a8a;
+  padding: 10px 20px;
+  border-radius: 15px;
+  color: #434343;
+  margin-bottom: 30px;
+}

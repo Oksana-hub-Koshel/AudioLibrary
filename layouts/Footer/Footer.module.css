@@ -1,0 +1,35 @@
+.footer {
+    padding: 40px 0;
+}
+.footer nav {
+    padding: 40px 0;
+    display: flex;
+}
+.footer nav > div {
+    margin-right: 60px;
+}
+.footer h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.footer nav li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.footer nav li i {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    background: #777;
+    margin-right: 10px;
+}
+.copyright {
+    text-align: right;
+    margin-top: 40px;
+}
+.copyright h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}

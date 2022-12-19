@@ -1,0 +1,19 @@
+.container_global_line{
+    display: flex;
+    padding-top:1%;
+    flex-wrap: wrap;
+    gap: 0.992%;
+    row-gap: 0.8vw;
+
+
+}
+.container_global_block{
+    display: flex;
+    padding-top:1%;
+    flex-wrap: wrap;
+    gap: 0.992%;
+    row-gap: 3vw;
+    column-gap: 1.8%;
+  justify-content: space-between;
+
+}

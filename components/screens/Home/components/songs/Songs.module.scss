@@ -1,0 +1,399 @@
+.wrapper_line {
+    gap: 0.8vw;
+    padding: 0.6vw;
+    width: 49.504%;   /*Обвертка для линейных элем */
+    display: flex;
+cursor: pointer;
+    align-items: center;
+    @media screen and (max-width: 920px){
+        width: 100%;
+    }
+   }
+
+
+
+.wrapper_line:hover{
+    background-color: black;    /* Цвет при наведении для линейных элем  */
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.color_line{
+    background-color: black;       /*Цвет при онклик для линейных элем  */
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.wrapper_modal{
+    display: flex;
+    width: 14%;                    /*Обвертка для блочных элем */
+    gap:0.3vw;
+    //column-gap: 20px;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    border-radius: 6%;
+    background: #0f1e33;
+    padding: 0.7%;
+    @media screen  and (min-width:1280px) and (min-width:1490px) {
+        width: 13.8%;
+
+    }
+    @media screen  and (min-width:1024px){
+        width: 12.8%;
+    }
+    @media screen  and (max-width:1024px){
+        width: 16%;
+    }
+    @media screen  and (max-width:1024px){
+        width: 16%;
+    }
+    @media screen  and (max-width:768px){
+        width: 20%;
+    }
+    @media screen  and (max-width:690px){
+        width: 30%;
+    }
+
+}
+
+.photo_controls_line {
+    height: 100%;
+    display: flex;                 /*Кнопка play+picture в линейных элем */
+    gap: 0.4vw;
+    align-items: center;
+}
+
+
+.photo_controls_modal {
+    height: 100%;                  /* картинка в блочном элем */
+    display: flex;
+    align-items: center;
+    margin-bottom: 7%;
+    cursor: pointer;
+}
+
+
+
+.photo_controls_modal div{
+    position: relative;
+    display: inline-block;                  /*Hover effect in  block elements*/
+    margin: 0;
+    box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    border-radius: 15px;
+}
+.photo_controls_modal div > div{
+    width: 100%;
+    height: 100%;                            /*Hover effect in  block elements*/
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.photo_controls_modal div:hover > div{
+    position: absolute;                       /*Hover effect in  block elements*/
+    overflow: hidden;
+    top: 0px;
+    left: 0;
+}
+.photo_controls_modal div div{
+    opacity: 0;
+    background-color: lightgrey;                /* Фон блока при наведении */
+    transition: all 0.4s ease-in-out;
+    color: #fff;
+}
+.photo_controls_modal div img{                /*Hover effect in  block elements*/
+    transition: all 0.2s linear;
+}
+.photo_controls_modal div:hover img{           /*Hover effect in  block elements*/
+    transform: scale(1.3);
+}
+.photo_controls_modal  div:hover div {          /*Hover effect in  block elements*/
+    opacity: 1;
+}
+
+
+.icons{
+    display:flex;
+    flex-direction: row;        /*Hover effect in  block elements icons*/
+    align-items: center;
+    gap: 5%;
+}
+
+.item1{
+    transform: rotate(180deg);             /*heart icon*/
+    width: 20%;
+    height: 20%;
+
+}
+.item2{
+    width: 30%;                    /*play or pause*/
+    height: 30%;
+    color:black
+}
+.item3{                              /*share icon*/
+    width: 20%;
+    height: 20%;
+
+}
+
+.photo_line{                     /*track image in lines*/
+    height: 5vw;
+    border-radius: 10%;
+}
+.photo_modal{
+    width: 100%;                   /*track image in blocks*/
+    border-radius: 10%;
+}
+
+
+
+
+.about_info_line {                  /*all information with description and icons in line*/
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0px 0.4vw 0.4vw 0px;
+    height: 100%;
+    gap:0.2vw;
+}
+.about_info_modal{
+    display: flex;                  /*all information with description and icons in block*/
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5vw;
+
+}
+
+.about_block{
+    display:flex;
+    flex-direction: column;   /*padding between name song and album in blocks */
+    gap: 0.5vw;
+}
+.about_line{
+    display:flex;
+    flex-direction: column;   /*padding between name song and album in line */
+    gap: 0.1vw;
+}
+
+
+.description_and_icons_line{
+    display: flex;               /*block name song and like numbers and icon in line */
+    justify-content: space-between;
+    width: 100%;
+
+}
+.description_and_icons_block{       /*block song name and album in blocks*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+//.about {
+//    display: flex;                  /*block song name and album in blocks*/
+//    flex-direction: column;
+//    gap: 5px;
+//}
+.title_line{
+    font-size: 1.15vw;            /*name of song in line*/
+
+}
+
+.title_block{
+    font-size:1vw;               /*name of song in block*/
+    @media screen  and (max-width:1150px){
+        font-size: 0.7vw;
+    }
+}
+
+
+
+.album_line{
+    font-size: 1vw;           /*album name in line*/
+    color:darkgray;
+    margin-top: 3%;
+}
+.album_block {
+    color: darkgrey;
+    font-size: 1vw;
+
+    @media screen and (max-width: 1150px) {
+        font-size: 0.8vw;
+    }
+}
+
+
+
+.heart_and_time_line {    /*string heart and time in line*/
+    display: flex;
+    gap: 0.3vw;
+    font-size: 1vw;
+}
+.heart_line{
+    transform: rotate(180deg);      /*heart icon in line*/
+    color:white;
+
+}
+.year_and_controls_line {            /*year and icons block in line*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.year_and_controls_block{
+    width: 100%;                         /*year and icons block in block*/
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    @media screen and (max-width: 1350px){
+        gap:0.7vw;
+    }
+    @media screen and (max-width: 1024px){
+        gap:1vw;
+    }
+
+
+}
+.year_line{
+    font-size: 0.8vw;            /*year in line*/
+    color:darkgray;
+}
+.year_block{
+    font-size: 0.7vw;               /*year in block*/
+
+}
+
+
+
+.like_number_icon_block{
+    display: flex;              /*likes and icon in block*/
+    align-items: center;
+    gap:0.2vw;
+
+}
+
+.like_number_icon_line{
+    display: flex;                 /*likes and icon in line*/
+    align-items: center;
+    gap: 10%;
+
+}
+.controls_line {
+    display: flex;                 /*low icons block in line*/
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+
+}
+
+
+.controls_block{                     /*low icons block in blocks*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap:1vw;
+    @media screen and (max-width: 1350px){
+        column-gap: 0.5vw;
+    }
+    @media screen and (max-width: 1024px){
+        gap:1vw;
+    }
+
+}
+
+.like_icon_line{
+    transform: rotate(180deg);          /*like icon in line*/
+    transform: scale(1, -1);
+    width: 1.5vw;
+    height: 1.5vw;
+
+}
+.like_icon_block{                          /*like icon in block*/
+    transform: rotate(180deg);
+    transform: scale(1, -1);
+    width:0.9vw;
+    height: 0.9vw;
+
+
+
+}
+
+
+.like_number_line{
+    font-size: 0.9vw;                     /*like number in line*/
+}
+.like_number_block{
+    font-size: 0.7vw;                        /*like number in block*/
+
+}
+
+
+
+.headphones_listeners_line{            /*headphone icon and number of listeners in line*/
+    gap: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.headphones_listeners_block{           /*headphone icon and number of listeners in block*/
+display: flex;
+    align-items: center;
+gap: 0.2vw;
+
+}
+
+.headphones_line{
+    transform: rotate(180deg);         /*headphones icon in line*/
+    transform: scale(1, -1);
+    width: 1.5vw;
+    height: 1.5vw;
+
+}
+.headphones_block{
+    transform: rotate(180deg);         /*headphones icon in line*/
+    transform: scale(1, -1);
+    width:0.9vw;
+    height: 0.9vw;
+
+}
+
+
+
+.listeners_number_line{         /*font-size number of listeners the same in both blocks*/
+    font-size: 0.9vw;
+
+}
+
+.listeners_number_block{         /*font-size number of listeners the same in both blocks*/
+    font-size: 0.7vw;
+
+}
+
+
+.share_icon_line{
+    color:darkgrey;
+    width: 1.2vw;
+    height: 1.2vw;
+
+}
+/*play and pause icons */
+
+.play_icon{
+    width: 1.2vw;
+    height: 1.2vw;
+    opacity: 0;
+
+}
+.pause_icon{
+    width: 1.2vw;
+    height: 1.2vw;
+    opacity: 0;
+}
+.status_play_on{
+    opacity: 1;
+
+}
+.status_pause_on{
+    opacity: 1;
+}
+

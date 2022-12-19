@@ -1,0 +1,11 @@
+.slide{
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+  border-radius: 15px;
+  max-width: 200px;
+}
+.wrapper {
+  position:relative;
+  max-width: 850px;
+}

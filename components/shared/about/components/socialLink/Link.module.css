@@ -1,0 +1,18 @@
+.social_photo a{
+  width: 20px;
+  height: 20px;
+  display: flex;
+
+}
+
+.social_text {
+  display: grid; 
+  grid-template-columns: 90px 70%;
+  column-gap: 20px;
+  color: #6b6b6b;
+  align-items: center;
+}
+
+.social_text a {
+  color:#fff;
+}

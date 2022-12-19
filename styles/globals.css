@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: #0b1828;
+  color: #fff;
+  font-family: Nunito, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+
+hr {
+  border: 1px solid #235;
+}
+.action_button {
+    background: #a26;
+    color: #fff;
+    border-radius: 10px;
+    padding: 14px 40px;
+    font-size: 20px;
+    transition: all linear .2s;
+}
+.action_button:hover {
+  background: #f29;
+}
+
+.button-prev  {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  left: 0;
+  z-index: 100;
+  transform: translate(0%,-50%);
+  height: 100%;
+  width: 35px;
+  background-color: #0000005e;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+
+.button-next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 100;
+  height: 100%;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  transform: translate(0%,-50%);
+  background-color: #0000005e;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  opacity: 1;
+  transition:all 0.5s ease;
+}
+
+.swiper-button-disabled {
+  opacity: 0;
+  transition:all 0.5s ease;
+}

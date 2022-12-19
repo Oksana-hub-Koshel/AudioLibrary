@@ -1,0 +1,18 @@
+.photo {
+  width:35px
+}
+.control {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.wrapper{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 19% 19% 19% 7% 9% 5% 7% 7%;
+  column-gap: 1.1%;
+  font-size: 16px;
+  color: #6b6b6b;
+
+}

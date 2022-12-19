@@ -1,0 +1,49 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 14px;
+  margin-bottom: 50px;
+  padding-right: 20%;
+  position: relative;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  
+}
+.item {
+  display: grid; 
+  grid-template-columns: 90px 1fr;
+
+  column-gap: 20px;
+  color: #6b6b6b;
+  align-items: center;
+}
+.item span {
+  color:#fff;
+}
+.title {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.social_links{
+  display: flex;
+  gap: 10px;
+}
+.photo {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.description{
+  align-items: start;
+}
+
+.wrapper_active {
+  flex-direction: row;
+}

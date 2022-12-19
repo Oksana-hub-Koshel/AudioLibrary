@@ -1,0 +1,25 @@
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns:100px 1fr;
+  margin-bottom: 20px;
+  column-gap: 1%;
+  align-items: center;
+  justify-items: center;
+  row-gap:15px;
+}
+
+.title{
+  font-size: 18px;
+}
+
+.small {
+  grid-template-columns:50px 1fr;
+
+}

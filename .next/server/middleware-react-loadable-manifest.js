@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST={"../components/shared/Player/SSRPlayer.tsx -> ./Player":{"id":"../components/shared/Player/SSRPlayer.tsx -> ./Player","files":["static/chunks/components_shared_Player_Player_tsx.js"]}}

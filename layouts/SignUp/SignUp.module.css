@@ -1,0 +1,29 @@
+.modal {
+    width: 320px;
+    background: #0f1e33;
+    text-align: center;
+    padding: 0 20px;
+}
+.modal h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.social_signIn {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-size: 16px;
+    user-select: none;
+    margin-bottom: 10px;
+}
+.social_signIn:hover {
+    background: #ccc !important;
+}
+.social_signIn svg{
+    width: 34px;
+    margin-right: 20px;
+    height: 34px;
+}

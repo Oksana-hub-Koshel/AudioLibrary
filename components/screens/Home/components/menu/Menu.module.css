@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+.container_head{
+    display: flex;
+
+}
+.radix_icon{
+    width: 2vw;
+    height: 2vw;
+}
+
+
+.text{
+    padding-bottom: 5%;
+    color: white;
+    font-size:2vw;
+}
+.icons{
+    display: flex;
+        column-gap: 10%;
+
+}
+.icon1_module{
+    width: 3vw;
+    height: 3vw;
+    cursor: pointer;
+}
+
+
+.icon2_module{
+    width: 3vw;
+    height: 3vw;
+    cursor: pointer;
+
+
+}
+.iconContainer2{cursor: pointer;
+margin-top: 5px;}
+
+.iconContainer1{
+    cursor: pointer;
+    margin-right: 5px;
+
+
+}
